@@ -11,8 +11,22 @@ function Def(html) {
           integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
           crossorigin="anonymous"
         ></link>
-        <link rel='stylesheet' href='/css/style.css'/>
+        <link rel="stylesheet" href="/css/style.css" />
       </head>
+      <nav>
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/places">Places</a>
+          </li>
+          <li>
+            <a href="/places/new">Add Place</a>
+          </li>
+        </ul>
+      </nav>
+
       <body>{html.children}</body>
     </html>
   );
