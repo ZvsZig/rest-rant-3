@@ -13,7 +13,7 @@ function show(data) {
           width="300px"
           height="300px"
         />
-        <a href={`/places/${data.id}/edit`} className="btn btn-warning">
+        <a href={`/places/${data.place.id}/edit`} className="btn btn-warning">
           Edit
         </a>
         <form method="POST" action={`/places/${data.id}?_method=DELETE`}>
