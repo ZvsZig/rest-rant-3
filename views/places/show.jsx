@@ -33,7 +33,7 @@ function show(data) {
         </div>
         <br/><br/>
         <div className="row">
-          <a className="col-sm-1 edit-button"
+          <a className="col-sm-1 edit-button btn-warning"
             href={`/places/${data.id}/edit`}
           >
             Edit
