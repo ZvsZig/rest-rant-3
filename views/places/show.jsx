@@ -5,35 +5,41 @@ function show(data) {
   return (
     <Def>
       <main>
-        <br/><br/>
+        <br />
+        <br />
         <div className="row">
           <div className="col-sm-6">
-          <img
-          src={data.place.pic}
-          alt={data.place.name}
-          width="300px"
-          height="300px"
-        />
+            <img
+              src={data.place.pic}
+              alt={data.place.name}
+              width="300px"
+              height="300px"
+            />
+            <h3>
+              Located in {data.place.city}, {data.place.state}
+            </h3>
           </div>
           <div className="col-sm-6">
             <h1>{data.place.name}</h1>
             <h2>Rated</h2>
             <p>Not Rated</p>
             <h2>Description</h2>
-            <p>
-              Located {data.place.city}, {data.place.state}, and serving{" "}
-              {data.place.cuisines}
-            </p>
+            <h3>{data.place.showEstablished()}</h3>
+            <h4>Serving {data.place.cuisines}</h4>
           </div>
         </div>
-        <br/><br/><br/>
+        <br />
+        <br />
+        <br />
         <div className="row">
           <h2>Comments</h2>
           <p>no comments yet!</p>
         </div>
-        <br/><br/>
+        <br />
+        <br />
         <div className="row">
-          <a className="col-sm-1 edit-button btn-warning"
+          <a
+            className="col-sm-1 edit-button btn-warning"
             href={`/places/${data.id}/edit`}
           >
             Edit
@@ -48,7 +54,7 @@ function show(data) {
             </button>
           </form>
         </div>
-        <br/>
+        <br />
       </main>
     </Def>
   );
